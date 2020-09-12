@@ -21,7 +21,7 @@
     <!-- ===============================
     HEADER
     ================================ -->
-    <section class="siteheader">
+    <section class="siteheader" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
@@ -41,11 +41,11 @@
                             <span></span>
                         </div>
                         <ul class="mainmenu">
-                            <li><a href="javascript:;">Home</a></li>
-                            <li><a href="javascript:;">Key Features</a></li>
-                            <li><a href="javascript:;">Pricing</a></li>
-                            <li><a href="javascript:;">Testimonials</a></li>
-                            <li><a href="javascript:;">FAQ</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#keyFeatures" >Key Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                             <li class="tryforfree"><a href="javascript:;">Try for Free</a></li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@
                 <div class="col-sm-12 col-md-6  col-lg-6">
                     <div class="bannerContent">
                         <div class="editor">
-                            <span></span> #1 Editors Choice App of 2020
+                            <span><i class="fa fa-check"></i></span> #1 Editors Choice App of 2020
                         </div>
                         <h1>Best app for your <br>modern lifestyle</h1>
                         <div class="infotext">Increase productivity with a simple to-do app. app for <br>managing your
@@ -160,7 +160,7 @@
     <!-- ===============================
     Features
     ================================ -->
-    <section class="features">
+    <section class="features" id="keyFeatures">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -482,7 +482,7 @@
     <!-- ===============================
     Pricing
     ================================ -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 textCenter">
@@ -549,7 +549,7 @@
     <!-- ===============================
     Client Meet
     ================================ -->
-    <section class="clientmeet">
+    <section class="clientmeet" id="testimonials">
         <div class="container">
             <div class="row">
 
@@ -645,7 +645,7 @@
     <!-- ===============================
     FAQ
     ================================ -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 textCenter">
@@ -828,47 +828,3 @@
 </body>
 
 </html>
-<script>
-    jQuery('.clientSlider').owlCarousel({
-        loop: false,
-        margin: 0,
-        nav: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
-
-    jQuery('.testimonialsSlider').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-
-    function toggleIcon(e) {
-        $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('fa-plus fa-minus');
-    }
-    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-    $('.panel-group').on('shown.bs.collapse', toggleIcon);
-</script>

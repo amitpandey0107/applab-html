@@ -43,6 +43,11 @@ HEADER
 .siteheader{
     position: relative;
     padding: 15px 0;
+    transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -moz-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -ms-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -o-transition: all .25s cubic-bezier(.455,.03,.515,.955);
 }
 .siteheader .logo a{
     display: block;
@@ -123,6 +128,8 @@ BANNER
     position: absolute;
     left: 0;
     top: 0;
+    text-align: center;
+    font-size: 21px;
 }
 .banner .bannerContent h1 {
     color: #242f51;
@@ -299,7 +306,7 @@ Clients
 ==================== */
 .clients {
     position: relative;
-    padding: 80px 0;
+    padding: 80px 0 20px 0;
 }
 .clients .smallTitle {
     color: #242f51;
@@ -322,7 +329,7 @@ Features
 ================= */
 .features {
     position: relative;
-    padding: 20px 0 0 0;
+    padding: 70px 0 0 0;
 }
 .features .fImage{
     position: relative;
@@ -990,4 +997,21 @@ Mobile Logo
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+/* ================
+Other
+================ */
+.stickyTop {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5);
+    transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -moz-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -ms-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -o-transition: all .25s cubic-bezier(.455,.03,.515,.955);
 }
